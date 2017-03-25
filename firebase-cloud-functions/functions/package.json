@@ -9,7 +9,7 @@
   },
   "private": true,
   "scripts": {
-    "test": "jasmine",
+    "test": "cd .. && jasmine",
     "deploy": "cd .. && firebase deploy --only functions"
   },
   "version": "1.0.0",
