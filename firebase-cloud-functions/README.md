@@ -17,7 +17,7 @@ As of this writing, there are six types of triggers:
 5. [HTTP](https://firebase.google.com/docs/functions/http-events) triggers
 6. [Cloud Pub/Sub](https://firebase.google.com/docs/functions/pubsub-events) triggers
 
-You can read the docs on each of those triggers for some the full rundown. They're not hard to use, although they can be tricky to test. I'm going to start with Authentication and  Firebase Realtime Database triggers. If you can get those working, you shouldn't have trouble with the other even types.
+You can read the docs on each of those triggers for the full rundown. They're not hard to use, although they can be tricky to test. I'm going to start with Authentication and  Firebase Realtime Database triggers. If you can get those working, you shouldn't have trouble with the other event types.
 
 ### Node Environment
 
