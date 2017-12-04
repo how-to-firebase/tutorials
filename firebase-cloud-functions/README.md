@@ -216,5 +216,9 @@ I'm using [Jasmine](https://jasmine.github.io/2.0/node.html) for my Node.js test
 
 You can run the test in this repo by simply installing and running ```jasmine``` at the top-level of the repo. Otherwise, you can ```cd functions && yarn test``` to get the same result. Note that you'll need to copy ```/functions/config.json.dist``` to ```/functions/config.json``` and edit the file so that it contains your Firebase details. I'm not checking my ```service-account.json``` file into source control :)
 
+### NEXT STEPS
 
+1. Long-running processes
+2. Cron jobs
+3. All of the new event types
 
