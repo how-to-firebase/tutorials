@@ -1,4 +1,4 @@
-# Why Firebase Authentication?
+# Introduction: Why Firebase Authentication?
 
 You need Firebase Authentication for two reasons:
 
