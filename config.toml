@@ -1,4 +1,4 @@
-baseurl = "https://how-to-firebase.github.io/"
+baseurl = "https://how-to-firebase.github.io/tutorials/"
 languageCode = "en-us"
 title = "Fullstack Firebase"
 theme = "hugo-material-docs"
