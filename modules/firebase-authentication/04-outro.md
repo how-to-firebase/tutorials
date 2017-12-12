@@ -1,8 +1,8 @@
 # Outro: Maybe it wasn't that easy :)
 
-I covered email/password, phone and OAuth authentication methods.
+We covered email/password, phone and OAuth authentication methods.
 
-I did not cover anonymous authentication or custom authentication.
+We did not cover anonymous authentication or custom authentication.
 
 ## Anonymous & Custom Authentication
 

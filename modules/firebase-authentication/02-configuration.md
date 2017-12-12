@@ -5,9 +5,9 @@ left nav bar.
 
 Now select the **SIGN-IN METHOD** tab and start enabling sign-in methods.
 
-![Imgur](https://i.imgur.com/dmAgaFh.png)
+![sign in method](https://i.imgur.com/dmAgaFh.png)
 
-Email/Password, Phone, Google and Anonymous auth are can be enabled with a quick button click. The
+Email/Password, Phone, Google and Anonymous auth can be enabled with a quick button click. The
 third-party providers--Facebook, Twitter and Github--will require a little more ceremony. You'll
 need to follow the instructions in the Firebase docs to register your app with the third-party
 provider. We'll cover the Facebook flow below.
@@ -27,7 +27,7 @@ email addresses and provide them the same account data.
 
 Multiple accounts per email is harder to secure than requiring one account per email. If you require
 one account per email you can still prompt users to link accounts their other
-Google/Facebook/Twitter/Github accounts once they've logged.
+Google/Facebook/Twitter/Github accounts once they've logged in.
 
 I've just noticed that my users tend to forget how they logged in last time, so I like to
 automatically link accounts if possible. But yeah... that's extra work on my end, and it's possible
