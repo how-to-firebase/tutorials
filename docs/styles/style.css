@@ -1,0 +1,8 @@
+.logo img {
+  background: transparent !important;
+}
+
+.admonition a {
+  text-decoration: underline;
+  color: white !important;
+}

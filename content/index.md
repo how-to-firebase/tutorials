@@ -1,55 +1,69 @@
 ---
-date: 2016-03-08T21:07:13+01:00
-title: Material for Hugo
+date: 2017-12-13T00:00:00-07:00
+title: "Introduction"
 type: index
-weight: 0
+weight: 1
 ---
 
-## Beautiful documentation
+# Production-Worthy Firebase
 
-Material is a theme for [Hugo](https://gohugo.io), a fast and flexible static site generator. It is built using Google's [material design](https://www.google.com/design/spec/material-design/introduction.html)
-guidelines, fully responsive, optimized for touch and pointer devices as well
-as all sorts of screen sizes.
+This course will introduce you to Firebase and grow your understanding of the platform until you're comfortable deploying an app to production for your users.
 
-![Material Screenshot](/images/screen.png)
+## Beginners Welcome!
 
-Material is very lightweight – it is built from scratch using Javascript and
-CSS that weighs less than 30kb (minified, gzipped and excluding Google Fonts
-and Analytics). Yet, it is highly customizable and degrades gracefully in older
-browsers.
+You'll need to know JavaScript. You'll also need to know some Git to install the local demo.
 
-## Quick start
+If you're weak on JavaScript... this may not be the course for you.
 
-Install with `git`:
+You don't need to know the first thing about Firebase to get started. Just be patient and move slowly through the material.
 
-```sh
-git clone git@github.com:digitalcraftsman/hugo-material-docs.git themes/hugo-material-docs
-```
+If you're already adept with Firebase, then please jump around! The more advanced modules later in the course will be of particular interest.
 
-## Features
+## Course Structure
 
-- Beautiful, readable and very user-friendly design based on Google's material
-  design guidelines, packed in a full responsive template with a well-defined
-  and [easily customizable color palette]({{< relref "getting-started/index.md#changing-the-color-palette" >}}), great typography, as well as a
-  beautiful search interface and footer.
+The course is broken up into modules.
 
-- Well-tested and optimized Javascript and CSS including a cross-browser
-  fixed/sticky header, a drawer that even works without Javascript using
-  the [checkbox hack](http://tutorialzine.com/2015/08/quick-tip-css-only-dropdowns-with-the-checkbox-hack/) with fallbacks, responsive tables that scroll when
-  the screen is too small and well-defined print styles.
+Each module will have the following parts:
 
-- Extra configuration options like a [project logo]({{< relref "getting-started/index.md#adding-a-logo" >}}), links to the authors
-  [GitHub and Twitter accounts]({{< relref "getting-started/index.md#adding-a-github-and-twitter-account" >}}) and display of the amount of stars the
-  project has on GitHub.
+- Introduction
+- Key concepts
+- Demo walk-through
+- Exercise
+- Downloadable notes
 
-- Web application capability on iOS – when the page is saved to the homescreen,
-  it behaves and looks like a native application.
+Some modules will build on each other, so watch out for prerequisite warnings:
 
-See the [getting started guide]({{< relref "getting-started/index.md" >}}) for instructions how to get
-it up and running.
+{{% warning title="Prerequisite" %}}
+  Don't read JavaScript? This is not the course you're looking for.
+{{% /warning %}}
 
-## Acknowledgements
 
-Last but not least a big thank you to [Martin Donath](https://github.com/squidfunk). He created the original [Material theme](https://github.com/squidfunk/mkdocs-material) for Hugo's companion [MkDocs](http://www.mkdocs.org/). This port wouldn't be possible without him.
+You'll also see some notes!
 
-Furthermore, thanks to [Steve Francia](https://gihub.com/spf13) for creating Hugo and the [awesome community](https://github.com/spf13/hugo/graphs/contributors) around the project.
+{{% note title="Hello World" %}}
+  I'll sprinkle little notes throughout the course for your enjoyment!
+{{% /note %}}
+
+## What to expect
+
+* Opinionated code
+* Templating with Preact (JSX) 
+* You'll need a Firebase account using the free tier
+
+I've written unopinionated courses. It's not fun. So I've made some decisions.
+
+If you're not familiar with Preact or JSX, don't worry. They're both easy to read, and I've de-emphasized them as much as possible.
+
+Firebase's free tier is **very generous**. There are some uses of Firebase Functions that require upgrading to a paid plan, but they're not required.
+
+## This course is not...
+
+* Framework agnostic
+* Exhaustive documentation
+* Constantly updated
+
+Firebase is framework-agnostic... but good luck writing a modern web application without at least JSX.
+
+I'll reference the [Firebase Docs](https://firebase.google.com/docs/) quite a bit throughout. I will not be trying to duplicate them.
+
+Firebase is constantly changing. The docs are canonical. Use them. I'll do my best to update this content, but I can't promise much. Have you found an error or a bug? Don't hesistate to file an issue on the [GitHub repo](https://github.com/how-to-firebase/tutorials) or make pull requests.

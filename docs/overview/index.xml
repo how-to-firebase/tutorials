@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overviews on How To Firebase: Tutorials</title>
+    <link>https://how-to-firebase.github.io/tutorials/overview/</link>
+    <description>Recent content in Overviews on How To Firebase: Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Wed, 13 Dec 2017 00:10:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://how-to-firebase.github.io/tutorials/overview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Overview</title>
+      <link>https://how-to-firebase.github.io/tutorials/overview/</link>
+      <pubDate>Wed, 13 Dec 2017 00:10:00 -0700</pubDate>
+      
+      <guid>https://how-to-firebase.github.io/tutorials/overview/</guid>
+      <description>Overview Firebase is a huge suite of products. We&amp;rsquo;ll focus on web.
+Modules Some of these modules are much larger than others.
+   Module Intensity Reasoning     Authentication 🌶 Auth is the easiest Firebase feature to implement.   Storage 🌶🌶 Small API with some complexity   Messaging 🌶🌶 The Firebase SDK hides most complexity   Firestore 🌶🌶🌶🌶🌶 Firestore is the meat of Firebase&amp;rsquo;s offering.</description>
+    </item>
+    
+    <item>
+      <title>Dashboard</title>
+      <link>https://how-to-firebase.github.io/tutorials/overview/dashboard/</link>
+      <pubDate>Wed, 13 Dec 2017 00:30:00 -0700</pubDate>
+      
+      <guid>https://how-to-firebase.github.io/tutorials/overview/dashboard/</guid>
+      <description>Firebase Dashboard Navigate to https://console.firebase.google.com/
+This will be a whirlwind tour, so buckle up!
+Console landing page You&amp;rsquo;ll select an existing project or click &amp;ldquo;Add project&amp;rdquo; to create a new project.</description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>https://how-to-firebase.github.io/tutorials/overview/demo/</link>
+      <pubDate>Wed, 13 Dec 2017 00:20:00 -0700</pubDate>
+      
+      <guid>https://how-to-firebase.github.io/tutorials/overview/demo/</guid>
+      <description>Demo Install You can take this course without installing a local copy of the demo.
+You can always come back to this page later if you change your mind :)
+Check out the code The code can be found on the How To Firebase GitHub repo.
+Basic Git ahead...
+If you&amp;rsquo;re weak on Git, print out GitHub&amp;rsquo;s Cheatsheet
+ Clone the project to your local filesystem with
+git clone https://github.</description>
+    </item>
+    
+  </channel>
+</rss>

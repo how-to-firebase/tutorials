@@ -1,68 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fullstack Firebase</title>
+    <title>How To Firebase: Tutorials</title>
     <link>https://how-to-firebase.github.io/tutorials/</link>
-    <description>Recent content on Fullstack Firebase</description>
+    <description>Recent content on How To Firebase: Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license</copyright>
-    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 13 Dec 2017 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://how-to-firebase.github.io/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Getting started</title>
-      <link>https://how-to-firebase.github.io/tutorials/getting-started/</link>
-      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
-      
-      <guid>https://how-to-firebase.github.io/tutorials/getting-started/</guid>
-      <description>Installation Installing Hugo Hugo itself is just a single binary without dependencies on expensive runtimes like Ruby, Python or PHP and without dependencies on any databases. You just need to download the latest version. For more information read the official installation guides.
-Let&amp;rsquo;s make sure Hugo is set up as expected. You should see a similar version number in your terminal:
-hugo version # Hugo Static Site Generator v0.15 BuildDate: 2016-01-03T12:47:47+01:00  Installing Material Next, assuming you have Hugo up and running the hugo-material-docs theme can be installed with git:</description>
-    </item>
-    
-    <item>
-      <title>Adding content</title>
-      <link>https://how-to-firebase.github.io/tutorials/adding-content/</link>
-      <pubDate>Wed, 09 Mar 2016 19:56:50 +0100</pubDate>
-      
-      <guid>https://how-to-firebase.github.io/tutorials/adding-content/</guid>
-      <description>Hello world Let&amp;rsquo;s create our first content file for your documentation. Open a terminal and add the following command for each new file you want to add. Replace &amp;lt;section-name&amp;gt; with a general term that describes your document in detail.
-hugo new &amp;lt;section-name&amp;gt;/filename.md  Visitors of your website will find the final document under www.example.com/&amp;lt;section-name&amp;gt;/filename/.
-Since it&amp;rsquo;s possible to have multiple content files in the same section I recommend to create at least one index.</description>
-    </item>
-    
-    <item>
-      <title>Roadmap</title>
-      <link>https://how-to-firebase.github.io/tutorials/roadmap/</link>
-      <pubDate>Wed, 09 Mar 2016 20:08:11 +0100</pubDate>
-      
-      <guid>https://how-to-firebase.github.io/tutorials/roadmap/</guid>
-      <description>Quo vadis? The port of the original Material theme has replicated nearly all of its features. A few are still missing but I&amp;rsquo;ve good news: the Hugo community is actively working on this issues. Maybe with the next release of Hugo we can abandon this list. Stay tuned.
-Localization Currently, it is possible to collect all strings in a single place for easy customization. However, this only enables you to define all strings in a single language.</description>
-    </item>
-    
-    <item>
-      <title>License</title>
-      <link>https://how-to-firebase.github.io/tutorials/license/</link>
-      <pubDate>Wed, 09 Mar 2016 20:10:46 +0100</pubDate>
-      
-      <guid>https://how-to-firebase.github.io/tutorials/license/</guid>
-      <description>Copyright &amp;copy; 2016 Digitalcraftsman digitalcraftsman@protonmail.com
-Copyright &amp;copy; 2016 Martin Donath martin.donath@squidfunk.com
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;ldquo;Software&amp;rdquo;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</description>
-    </item>
-    
-    <item>
-      <title>Material for Hugo</title>
+      <title>Introduction</title>
       <link>https://how-to-firebase.github.io/tutorials/</link>
-      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      <pubDate>Wed, 13 Dec 2017 00:00:00 -0700</pubDate>
       
       <guid>https://how-to-firebase.github.io/tutorials/</guid>
-      <description>Beautiful documentation Material is a theme for Hugo, a fast and flexible static site generator. It is built using Google&amp;rsquo;s material design guidelines, fully responsive, optimized for touch and pointer devices as well as all sorts of screen sizes.
-Material is very lightweight – it is built from scratch using Javascript and CSS that weighs less than 30kb (minified, gzipped and excluding Google Fonts and Analytics). Yet, it is highly customizable and degrades gracefully in older browsers.</description>
+      <description>Production-Worthy Firebase This course will introduce you to Firebase and grow your understanding of the platform until you&amp;rsquo;re comfortable deploying an app to production for your users.
+Beginners Welcome! You&amp;rsquo;ll need to know JavaScript. You&amp;rsquo;ll also need to know some Git to install the local demo.
+If you&amp;rsquo;re weak on JavaScript&amp;hellip; this may not be the course for you.
+You don&amp;rsquo;t need to know the first thing about Firebase to get started.</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://how-to-firebase.github.io/tutorials/overview/</link>
+      <pubDate>Wed, 13 Dec 2017 00:10:00 -0700</pubDate>
+      
+      <guid>https://how-to-firebase.github.io/tutorials/overview/</guid>
+      <description>Overview Firebase is a huge suite of products. We&amp;rsquo;ll focus on web.
+Modules Some of these modules are much larger than others.
+   Module Intensity Reasoning     Authentication 🌶 Auth is the easiest Firebase feature to implement.   Storage 🌶🌶 Small API with some complexity   Messaging 🌶🌶 The Firebase SDK hides most complexity   Firestore 🌶🌶🌶🌶🌶 Firestore is the meat of Firebase&amp;rsquo;s offering.</description>
+    </item>
+    
+    <item>
+      <title>Firebase Authentication</title>
+      <link>https://how-to-firebase.github.io/tutorials/authentication/</link>
+      <pubDate>Wed, 13 Dec 2017 00:40:00 -0700</pubDate>
+      
+      <guid>https://how-to-firebase.github.io/tutorials/authentication/</guid>
+      <description>Introduction: Why Firebase Authentication? You need Firebase Authentication for two reasons:
+ Firebase Security Rules rely on Firebase Authentication Firebase Authentication is ridiculously easy to use  Firebase Auth + Security Rules Firebase needs a security system. In a traditional database you provide your own security using your API server. Since Firebase Is the API server, it needs a programmable way to control read and write access to your data.</description>
+    </item>
+    
+    <item>
+      <title>Dashboard</title>
+      <link>https://how-to-firebase.github.io/tutorials/overview/dashboard/</link>
+      <pubDate>Wed, 13 Dec 2017 00:30:00 -0700</pubDate>
+      
+      <guid>https://how-to-firebase.github.io/tutorials/overview/dashboard/</guid>
+      <description>Firebase Dashboard Navigate to https://console.firebase.google.com/
+This will be a whirlwind tour, so buckle up!
+Console landing page You&amp;rsquo;ll select an existing project or click &amp;ldquo;Add project&amp;rdquo; to create a new project.</description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>https://how-to-firebase.github.io/tutorials/overview/demo/</link>
+      <pubDate>Wed, 13 Dec 2017 00:20:00 -0700</pubDate>
+      
+      <guid>https://how-to-firebase.github.io/tutorials/overview/demo/</guid>
+      <description>Demo Install You can take this course without installing a local copy of the demo.
+You can always come back to this page later if you change your mind :)
+Check out the code The code can be found on the How To Firebase GitHub repo.
+Basic Git ahead...
+If you&amp;rsquo;re weak on Git, print out GitHub&amp;rsquo;s Cheatsheet
+ Clone the project to your local filesystem with
+git clone https://github.</description>
     </item>
     
   </channel>

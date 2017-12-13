@@ -3,33 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://how-to-firebase.github.io/tutorials/getting-started/</loc>
-    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://how-to-firebase.github.io/tutorials/adding-content/</loc>
-    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://how-to-firebase.github.io/tutorials/roadmap/</loc>
-    <lastmod>2016-03-09T20:08:11+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://how-to-firebase.github.io/tutorials/license/</loc>
-    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://how-to-firebase.github.io/tutorials/</loc>
-    <lastmod>2016-03-08T21:07:13+01:00</lastmod>
+    <lastmod>2017-12-13T00:00:00-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://how-to-firebase.github.io/tutorials/adding-content/</loc>
-    <lastmod>2016-03-09T19:56:50+01:00</lastmod>
+    <loc>https://how-to-firebase.github.io/tutorials/overview/</loc>
+    <lastmod>2017-12-13T00:10:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://how-to-firebase.github.io/tutorials/authentication/</loc>
+    <lastmod>2017-12-13T00:40:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://how-to-firebase.github.io/tutorials/overview/dashboard/</loc>
+    <lastmod>2017-12-13T00:30:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://how-to-firebase.github.io/tutorials/overview/demo/</loc>
+    <lastmod>2017-12-13T00:20:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://how-to-firebase.github.io/tutorials/authentication/</loc>
+    <lastmod>2017-12-13T00:40:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -40,25 +40,13 @@
   
   <url>
     <loc>https://how-to-firebase.github.io/tutorials/</loc>
-    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
+    <lastmod>2017-12-13T00:00:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://how-to-firebase.github.io/tutorials/getting-started/</loc>
-    <lastmod>2016-03-09T00:11:02+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://how-to-firebase.github.io/tutorials/license/</loc>
-    <lastmod>2016-03-09T20:10:46+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://how-to-firebase.github.io/tutorials/roadmap/</loc>
-    <lastmod>2016-03-09T20:08:11+01:00</lastmod>
+    <loc>https://how-to-firebase.github.io/tutorials/overview/</loc>
+    <lastmod>2017-12-13T00:10:00-07:00</lastmod>
     <priority>0</priority>
   </url>
   
