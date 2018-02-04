@@ -41,3 +41,5 @@ config.json
 
 .vscode
 
+dist
+.cache
