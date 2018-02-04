@@ -1,0 +1,50 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth.uid === $uid || auth.token.admin === true",
+        ".write": "auth.uid === $uid || auth.token.admin === true"
+      }
+    },
+    "userOwned": {
+      "$objectType": {
+        "$uid": {
+          ".read": "auth.uid === $uid || auth.token.admin === true",
+          ".write": "auth.uid === $uid || auth.token.admin === true"
+        }
+      }
+    },
+    "userReadable": {
+      "$objectType": {
+        "$uid": {
+          ".read": "auth.uid === $uid || auth.token.admin === true",
+          ".write": "auth.token.admin === true"
+        }
+      }
+    },
+    "userWriteable": {
+      "$objectType": {
+        "$uid": {
+          ".read": "auth.token.admin === true",
+          ".write": "auth.uid === $uid || auth.token.admin === true"
+        }
+      }
+    },
+    "adminOwned": {
+      "$objectType": {
+        "$uid": {
+          ".read": "auth.token.admin === true",
+          ".write": "auth.token.admin === true"
+        }
+      }
+    },
+    "public": {
+      "$objectType": {
+        "$uid": {
+          ".read": true,
+          ".write": "auth.token.admin === true"
+        }
+      }
+    }
+  }
+}

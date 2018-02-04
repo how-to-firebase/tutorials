@@ -1,0 +1,26 @@
+{
+  "name": "starter-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-preact": "^1.1.0",
+    "firebase-tools": "^3.17.4"
+  },
+  "scripts": {
+    "deploy": "firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:database": "firebase deploy --only database",
+    "deploy:firestore": "firebase deploy --only firestore",
+    "deploy:storage": "firebase deploy --only storage",
+    "deploy:functions": "firebase deploy --only functions",
+    "start": "parcel src/index.html"
+  },
+  "dependencies": {
+    "@quiver/firebase-authentication": "^0.1.2",
+    "preact-custom-element": "^2.0.0"
+  }
+}
