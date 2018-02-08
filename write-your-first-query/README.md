@@ -27,3 +27,12 @@ Return to Glitch and start writing.
 
 Switch to the live-preview tab to see your progress!
 
+## Files 
+
+The files are in this repo. 
+
+They're also available at the following links:
+
+- [index.html](https://raw.githubusercontent.com/how-to-firebase/tutorials/master/write-your-first-query/index.html)
+- [complete.html](https://raw.githubusercontent.com/how-to-firebase/tutorials/master/write-your-first-query/complete.html)
+
