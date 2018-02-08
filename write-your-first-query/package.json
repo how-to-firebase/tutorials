@@ -1,0 +1,12 @@
+{
+  "name": "write-your-first-query",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^5.8.2"
+  },
+  "scripts": {
+    "upload": "node bin/upload-data.js"
+  }
+}
