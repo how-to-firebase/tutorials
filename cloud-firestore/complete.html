@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>First Firestore Query</title>
+</head>
+
+<body>
+
+  <!-- Load Firebase and Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-firestore.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="https://how-to-firebase-tutorials.firebaseapp.com/__/firebase/init.js"></script>
+
+  <script>
+    async function getPeople() {
+      // Data Structure
+      // Collection: public
+      //  Doc: write-your-first-query
+      //    Collection: star-wars-people
+      
+      const collection = firebase
+        .firestore()
+        .collection('public')
+        .doc('write-your-first-query')
+        .collection('star-wars-people');
+      const snapshot = await collection.get();
+
+      snapshot.docs.forEach(doc => {
+        console.log(doc.id, doc.data());
+      });
+    }
+
+    getPeople();
+
+  </script>
+
+  <h1>Page intentionally left blank</h1>
+
+</body>
+
+</html>
