@@ -1,0 +1,33 @@
+{
+  "eventId": "eb6H4zSgQABVKKifYOV24u0+Z0k=",
+  "timestamp": "2018-03-20T11:27:57.893Z",
+  "eventType": "google.firebase.database.ref.create",
+  "resource": {
+    "service": "firebaseio.com",
+    "name":
+      "projects/_/instances/how-to-firebase-tutorials/refs/authenticated/react-chat/Default Chat Room/-L829b5QxEoINb1ft39v"
+  },
+  "authType": "USER",
+  "auth": {
+    "uid": "DNhXq7T4igfchsZDIhxBWbRquF03",
+    "token": {
+      "name": "Chris Esplin",
+      "email_verified": true,
+      "email": "chris@quiver.is",
+      "exp": 1521548871,
+      "user_id": "DNhXq7T4igfchsZDIhxBWbRquF03",
+      "picture":
+        "https://lh4.googleusercontent.com/-ly98tZeA6F0/AAAAAAAAAAI/AAAAAAAAADk/G-1n2ID9bOw/photo.jpg",
+      "iat": 1521545271,
+      "sub": "DNhXq7T4igfchsZDIhxBWbRquF03",
+      "aud": "how-to-firebase-tutorials",
+      "auth_time": 1521545271,
+      "iss": "https://securetoken.google.com/how-to-firebase-tutorials",
+      "firebase": {
+        "identities": { "google.com": ["116279478330828791198"], "email": ["chris@quiver.is"] },
+        "sign_in_provider": "google.com"
+      }
+    }
+  },
+  "params": { "room": "Default Chat Room", "key": "-L829b5QxEoINb1ft39v" }
+}

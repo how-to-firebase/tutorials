@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title>First Firestore Query</title>
+  <title>Firestore: where and orderBy</title>
 </head>
 
 <body>
@@ -14,20 +14,43 @@
   <script src="https://how-to-firebase-tutorials.firebaseapp.com/__/firebase/init.js"></script>
 
   <script>
-    async function getPeople() {
+    async function getPeople(gender = 'male') {
       // Data Structure
       // Collection: public
-      //  Doc: write-your-first-query
+      //  Doc: cloud-firestore
       //    Collection: star-wars-people
+      const db = firebase.firestore();
+      const collection = db.collection('public')
+        .doc('cloud-firestore')
+        .collection('star-wars-people');
       
-      console.log('TODO: get people!');
+      // See Firebase docs: https://firebase.google.com/docs/firestore/query-data/queries
+    
+      // Write query for filtered by gender and ordered by descending height ascending mass
+      const query = collection
+        .where('gender', '==', gender)
+        .orderBy('height', 'asc')
+        .orderBy('mass', 'asc')
+      
+      // Get collection snapshot
+      const snapshot = await query.get();
+      
+      // Map through snapshot's docs
+      return snapshot.docs.map(doc => ({__id: doc.id, ...doc.data()})); 
     }
 
-    getPeople();
-
+    async function runQueries() {
+      const males = await getPeople('male');
+      const females = await getPeople('female');
+      
+      console.table(males);
+      console.table(females);
+    }
+    
+    runQueries();
   </script>
 
-  <h1>Page intentionally left blank</h1>
+  <h1>This page intentionally left blank</h1>
 
 </body>
 
