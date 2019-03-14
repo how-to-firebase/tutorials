@@ -22,7 +22,7 @@ Use Firebase when you need to ship yesterday.
 
 You may have heard that Firebase is just for startups or prototypes, or that it fails at scale or gets super expensive. Well... things have changed. A lot.
 
-## Firebase teaches you to use a distributed architecture
+## Firebase teaches front-end devs to use a distributed architecture
 
 Firebase enables a distributed architecture.
 
@@ -64,7 +64,7 @@ So get over your SQL-induced anxiety and duplicate data throughout your Firebase
 
 ## The Evil Twin Databases
 
-Firebase has two databases, 
+Firebase now has two databases, 
 
 1. the [Realtime Database](https://firebase.google.com/docs/database/), also known as classic Firebase or the RTDB, and
 2. [Cloud Firestore](https://firebase.google.com/docs/firestore/).
@@ -75,17 +75,50 @@ Firestore is better for longer-lived, more structured data. I use Firestore for 
 
 I use Firestore for user profiles, chat logs, purchase records... anything that I need to stick around for a while.
 
-
-
-
-
 ## Firebase is cheap and much, much faster
 
+The [Iron Triangle of Project Management](https://en.wikipedia.org/wiki/Project_management_triangle) states that all projects are compromises between **cost**, **scope** and **time**.
 
+Firebase is the lowest-cost and fastest development experience of which I'm aware.
 
-## Firebase includes everything you need to build small- to medium-sized apps
+I bootstrap projects on a regular basis. Most of my projects are solo projects. I'm the developer, designer and marketer. I'm incredibly time-constrained, so I use Firebase to enable me to achieve greater scope.
+
+I've built the following projects entirely on my own with Firebase:
+
+- [calligraphy.org](https://www.calligraphy.org/): Online teaching platform integrated with Shopify
+- [HiiTClock.com](https://www.hiitclock.com/): PWA workout timer
+- [pixels.chrisesplin.com](https://pixels.chrisesplin.com/): Chrome extension for UI development
+- [bunches.chrisesplin.com](https://bunches.chrisesplin.com/): Multi-player card game
+
+Calligraphy.org powers my wife's business. It took me four months to write it in the mornings before my full-time job. It would have taken twice as long without Firebase.
+
+The other projects took between 75 and 200 hours each. Again, I finished them in my spare time while relying heavily on Firebase.
+
+Firebase has spoiled me. I haven't spun up a new production server in two years. And these aren't just rapid prototypes. They're fully-functional, scalable and used by thousands of customers.
+
+## Firebase includes *nearly* everything I need to build small- to medium-sized apps
+
+The pillars of Firebase's web offering are 
+
+- the Realtime Database (json database),
+- Cloud Firestore (document/collection database),
+- Cloud Functions for Firebase (serverless functions),
+- Firebase Storage (file/blob storage), and 
+- Firebase Hosting (static file hosting).
+
+These five pillars can support an enormous range of apps.
+
+Realistically, you'll need to "cheat" on Firebase a bit for larger apps. I use GCP for a few things that don't fit neatly within the Firebase offering. I also use [Algolia](https://www.algolia.com/) to power my search. 
+
+The funny thing is that Algolia is the most expensive part of my stack at $35/month. The Firebase databases are optimized for everything **except search**. This is an important caveat to recognize early. Searching Firestore collections or anything in the Realtime Database is extremely limited, and for strong architectural reasons. I don't expect to ever see Firebase support search.
+
+I primarily use GCP to manage the DNS for my domains. But I've also run some Cloud Compute instances for build processes. 
+
+And I use [GitLab.com](https://gitlab.com/deltaepsilon) for CI/CD purposes... so I guess I step out on Firebase a couple of times on each project :)
 
 ## Firebase scales effortlessly
+
+
 
 ## GCP is the escape hatch
 
