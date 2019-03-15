@@ -28,7 +28,7 @@ Firebase enables a distributed architecture.
 
 New developers have traditionally learned to build monolithic apps.
 
-A monolith is a single application server that holds your database and server. Everything lives on a single server that you control, so it's very easy to teach and understand. 
+A monolith is a single application server that holds your database and server. Everything lives on a single server that you control, so it's very easy to teach and understand.
 
 The first managed service that I used was Amazon S3. It was an endpoint where I could send files. S3 would save the files and give me a link. I'd save the link in my local SQL database and S3 would serve the file to my users.
 
@@ -64,7 +64,7 @@ So get over your SQL-induced anxiety and duplicate data throughout your Firebase
 
 ## The Evil Twin Databases
 
-Firebase now has two databases, 
+Firebase now has two databases,
 
 1. the [Realtime Database](https://firebase.google.com/docs/database/), also known as classic Firebase or the RTDB, and
 2. [Cloud Firestore](https://firebase.google.com/docs/firestore/).
@@ -96,36 +96,95 @@ The other projects took between 75 and 200 hours each. Again, I finished them in
 
 Firebase has spoiled me. I haven't spun up a new production server in two years. And these aren't just rapid prototypes. They're fully-functional, scalable and used by thousands of customers.
 
-## Firebase includes *nearly* everything I need to build small- to medium-sized apps
+## Firebase includes _nearly_ everything I need to build small- to medium-sized apps
 
-The pillars of Firebase's web offering are 
+The pillars of Firebase's web offering are
 
 - the Realtime Database (json database),
 - Cloud Firestore (document/collection database),
 - Cloud Functions for Firebase (serverless functions),
-- Firebase Storage (file/blob storage), and 
+- Firebase Storage (file/blob storage), and
 - Firebase Hosting (static file hosting).
 
 These five pillars can support an enormous range of apps.
 
-Realistically, you'll need to "cheat" on Firebase a bit for larger apps. I use GCP for a few things that don't fit neatly within the Firebase offering. I also use [Algolia](https://www.algolia.com/) to power my search. 
+Realistically, you'll need to "cheat" on Firebase a bit for larger apps. I use GCP for a few things that don't fit neatly within the Firebase offering. I also use [Algolia](https://www.algolia.com/) to power my search.
 
-The funny thing is that Algolia is the most expensive part of my stack at $35/month. The Firebase databases are optimized for everything **except search**. This is an important caveat to recognize early. Searching Firestore collections or anything in the Realtime Database is extremely limited, and for strong architectural reasons. I don't expect to ever see Firebase support search.
+The funny thing is that Algolia is the most expensive part of my stack at \$35/month. The Firebase databases are optimized for everything **except search**. This is an important caveat to recognize early. Searching Firestore collections or anything in the Realtime Database is extremely limited, and for strong architectural reasons. I don't expect to ever see Firebase support search.
 
-I primarily use GCP to manage the DNS for my domains. But I've also run some Cloud Compute instances for build processes. 
+I primarily use GCP to manage the DNS for my domains. But I've also run some Cloud Compute instances for build processes.
 
 And I use [GitLab.com](https://gitlab.com/deltaepsilon) for CI/CD purposes... so I guess I step out on Firebase a couple of times on each project :)
 
 ## Firebase scales effortlessly
 
+Firebase does not allow slow operations. The database does not execute joins. It doesn't search.
 
+I've never brought a Firebase app up to massive scale. I've heard that the Realtime Database can run into limits and require manual sharding; however, Firestore is architected much differently, and I wouldn't be surprised if it scales more like [Cloud Spanner](https://cloud.google.com/spanner/).
+
+Firestore has some awesome performance characteristics.
+
+From the [Firestore marketing page](https://firebase.google.com/products/firestore/):
+
+> All queries scale with the size of your result set (note: not your data set), so your app is ready to scale from day one.
+
+Firestore also offers strong consistency, meaning that you don't have to worry about the eventual-consistency data models that bedevil most NoSQL implementations.
 
 ## GCP is the escape hatch
 
+Firebase services are built on Google Cloud Platform (aka GCP) infrastructure, and some of them are closely integrated.
+
+For instance, Firebase Cloud Storage uses GCP Storage buckets that you can access through the GCP SDKs.
+
+GCP is an enterprise-focused suite of service. It's massive.
+
+Each Firebase project comes with its own GCP account, granting you access to the full power of GCP. So don't worry if Firebase doesn't fulfill your every need. GCP likely has it covered.
+
+For example, If you don't want to pay for Algolia, you can spin up an Elasticsearch cluster on GCP and roll your own search. It'll be just as expensive as Algolia... so I can't recommend it for small projects; however, those capabilities are all there if you need them.
+
 ## Common concerns with Firebase
+
+Firebase has it's downsides!
+
+- Firebase cannot be hosted locally.
+- Firebase is tough to mock for local unit tests.
+- There's far less tooling available than for SQL databases.
+- Firebase can get expensive if you implement it poorly.
+
+None of these problems bothers me. It may be Stockholm Syndrome... but I'm at peace with all of these "problems" with Firebase.
+
+Engineering is all about tradeoffs. Firebase trades a bunch of control and autonomy for speed and simplicity of development.
 
 ## When to NOT use Firebase
 
+**DO NOT** use Firebase if you have highly relational data.
+
+**DO NOT** use Firebase if you have complex graph data.
+
+**DO NOT** use Firebase if you have complex server needs.
+
+I sometimes recommend hybrid architectures. Store your relational data in GCP's Cloud SQL or Cloud Spanner databases. Store your graph data in JanusGraph on top of Cloud Bigtable.
+
+But these are all advanced use cases! Don't worry about them until you need them.
+
 ## The competition
 
+Firebase's direct competition is dead. [Facebook killed off Parse](https://blog.parseplatform.org/announcements/a-parse-shutdown-reminder/) and [RethinkDB](https://rethinkdb.com/blog/rethinkdb-shutdown/) suffered a similar fate.
+
+The most direct alternative to Firebase at this point is AWS or GCP. They're quite a bit more complicated and harder to use... but you could achieve similar architectures with other services.
+
+Or just use Postgres. Postgres is killer... as long as you have budget to write your own API on top of it.
+
+That's about it. Use AWS, GCP or Postgres. Your dev velocity will suffer, but at least with Postgres you can run everything locally!
+
+I've spent a lot of time with Postgres running in a local Docker container, and it's slick. I didn't write that API myself. It was expensive to maintain, and I could have duplicated it in Firebase at a much lower cost. But the business I was working with wasn't a fan of managed services. What could I do :)
+
 ## Conclusion: Firebase is preferred for most front-end-focused apps
+
+Firebase is a slam dunk for small- to medium-sized projects, especially if they're front-end focused.
+
+You may need to re-architect if you hit massive scale... but you **always** have to re-architect for massive scale. Don't optimize for scale prematurely.
+
+Choose Firebase because it gets you to market faster. It helps you validate your ideas and get feedback.
+
+Firebase is a cornerstone of Google's cloud strategy. It's not going anywhere.
